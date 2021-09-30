@@ -1,5 +1,3 @@
-// const fs = require('fs');
-
 const appNameArgIndex = process.argv.indexOf('--name');
 const buildName = process.argv[appNameArgIndex + 1];
 const isAsync = buildName === 'comp-async';
@@ -29,5 +27,9 @@ module.exports = {
 			// libraryTarget = 'jsonp' вызывает функцию с именем, указанным в output.library
 			// libraryTarget: "var" | "assign" | "this" | "window" | "self" | "global" | "commonjs" | "commonjs2" | "commonjs-module" | "amd" | "amd-require" | "umd" | "umd2" | "jsonp" | "system"
 		}
+
+		CFG.module.rules.push({ parser: { system: false } });
+
+		// require('fs').writeFileSync('EFFECTIVE_CONFIG.js', JSON.stringify(CFG, null, '\t'));
 	},
 };

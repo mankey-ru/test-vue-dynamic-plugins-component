@@ -1,5 +1,5 @@
 <template>
-	<div id="app">MyPluginAsyncComponent</div>
+	<div id="app">Это асинхронно получаемый компонент плагина</div>
 </template>
 
 <script>

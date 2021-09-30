@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build-sync": "vue-cli-service build --name comp-sync src/CompSync.vue",
-    "build-sync2": "vue-cli-service build --name comp-sync --target lib --name myLib src/CompSync.vue",
-    "build-async": "vue-cli-service build --name comp-async src/CompAsync.vue"
+    "build-async": "vue-cli-service build --name comp-async src/CompAsync.vue",
+    "build-sync2": "vue-cli-service build --name comp-sync --target lib --name myLib src/CompSync.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,9 +17,9 @@
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
-		"> 1%",
-		"last 2 versions",
-		"not dead",
+    "> 1%",
+    "last 2 versions",
+    "not dead",
     "not ie > 0"
   ]
 }
